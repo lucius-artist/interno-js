@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss\main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="head">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">  <img src="imgs\logo.svg" alt="Logo"  class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse list" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec">
+    <div class="container-fluid frame">
+
+      <div class="container-fluid main">
+        <h1>Let's Create Your<br>
+         Dream Interior</h1> 
+
+          <h2 class="descr">
+            The world needs innovators and problem solvers who turn<br>
+            challenges into greater opportunities.
+          </h2>
+
+          <button type="button" class="btn btn-primary btn-main" id="fireworkButton">Get started</button>
+          <div id="fireworks-container"></div>
+      </div>
+
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec">
+    <div class="container-fluid cards">
+
+      <div class="container-fluid table-card">
+        <h1 class="table-name">Interior Design</h1> 
+
+        <h2 class="table-descr">
+          Enhancing the interior to achieve<br>
+          a healthier environment for the<br>
+          people using right space.
+        </h2>
+
+        <button type="button" class="btn btn-link table-btn">View More</button>
+      </div>
+
+      <div class="container-fluid table-card">
+        <h1 class="table-name">Furniture</h1> 
+
+        <h2 class="table-descr">
+          Movable articles that are used<br>
+          to make a room or building<br>
+          suitable for living or working.
+        </h2>
+
+        <button type="button" class="btn btn-link table-btn">View More</button>
+      </div>
+
+      <div class="container-fluid table-card">
+        <h1 class="table-name">Flooring</h1> 
+
+        <h2 class="table-descr">
+          Thin object any finished<br>
+          material applied over a floor<br>
+          structure to provide a walking<br>
+          surface.
+        </h2>
+
+        <button type="button" class="btn btn-link table-btn">View More</button>
+      </div>
+
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec">
+    <div class="container-fluid">
+
+      <div class="container-fluid call-sec text-sec">
+        <h1 class="call-name">We Tackle The Most<br>
+            Challenging Designs</h1> 
+
+        <h2 class="call-descr">
+          The world needs innovators and problem solvers who<br>
+          turn challenges into greater opportunities. We have an<br>
+          insatiable curiosity about transformative trends<br>
+          challenging the status.
+        </h2>
+
+        <div class="numb">
+          <img src="imgs\call.png" alt="call" height="97px" width="97px">
+          <h2 class="call-descr" style="width: 155px;">
+            012345678<br>
+            Call Us Anytime
+          </h2>
+        </div>
+        <button type="button" id="startButton" class="btn btn-primary btn-main">Get started</button>
+      </div>
+
+      <div class="container-fluid call-sec img-kitchen">
+        <img src="imgs\kitchen.png" class="img-fluid kitchen" alt="kitchen">
+      </div>
+
+      <div id="modal" class="custom-modal">
+        <h2>Извините, в данный момент ведутся технические работы</h2>
+        <p>
+            Пожалуйста, напишите нам на почту 
+            <a href="mailto:prostite_za_cringe@gmail.com">prostite_za_cringe@gmail.com</a> 
+            о случившейся ошибке.
+        </p>
+        <div class="timer" id="timer">00:15</div>
+        <button id="closeModal" class="btn btn-secondary">Закрыть</button>
+    </div>
+
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec">
+    <div class="container-fluid review">
+
+      <h2 class="name">
+        What the People Thinks<br>
+        About Interno
+      </h2>
+
+      <div class="container-fluid rev-cards">
+
+        <div class="container-fluid rev-card">
+        
+          <div class="container-fluid name-town">
+            <img src="imgs\lisa.png" class="img-fluid photo" alt="lisa">
+
+            <div class="container-fluid">
+              <h2 class="name-rev">Lisa Clairton</h2>
+              <h2 class="town-rev">New York, USA</h2>
+            </div>
+          </div>
+
+          <h2 class="text-rev">
+            We selected Interno interior<br>
+            because of rigorous design<br>
+            background & education.
+          </h2>
+        </div>
+
+        <div class="container-fluid rev-card">
+          
+          <div class="container-fluid name-town">
+            <img src="imgs\david.png" class="img-fluid photo" alt="david">
+
+            <div class="container-fluid">
+              <h2 class="name-rev">David Knight</h2>
+              <h2 class="town-rev">Sydney, Australia</h2>
+            </div>
+          </div>
+
+          <h2 class="text-rev">
+            The team exceeded our <br>
+            expectations and emerged as<br>
+            leaders of our project's.
+          </h2>
+        </div>
+
+        <div class="container-fluid rev-card">
+          
+          <div class="container-fluid name-town">
+            <img src="imgs\lisa2.png" class="img-fluid photo" alt="lisa2">
+
+            <div class="container-fluid">
+              <h2 class="name-rev">Lisa Clairton</h2>
+              <h2 class="town-rev">Paris, France</h2>
+            </div>
+          </div>
+
+          <h2 class="text-rev">
+            They balanced the architectural<br>
+            vision and the project realities<br>
+            beautifully.
+          </h2>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec">
+    <div class="container-fluid brands">
+      <img src="imgs\home.png" class="img-fluid" alt="home">
+      <img src="imgs\stylevintage.png" class="img-fluid" alt="stylevintage">
+      <img src="imgs\brand.png" class="img-fluid" alt="brand">
+      <img src="imgs\naturehome.png" class="img-fluid" alt="naturehome">
+      <img src="imgs\classic.png" class="img-fluid" alt="classic">
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec proj">
+    <div class="container-fluid proj">
+      
+      <div class="container-fluid pr-text">
+        <h1 class="pr-name">
+          Recent Projects
+        </h1>
+
+        <h2 class="pr-descr">
+          With tools to make every part of your process more human and a support team <br>
+          excited to help you, getting started with us never been easier.
+        </h2>
+      </div>
+
+      <div class="container-fluid pr-cards">
+
+        <div class="container-fluid pr-card">
+          <img src="imgs\pr1.png" class="img-fluid pr-img" alt="pr1">
+
+          <div class="container-fluid pr-subtext">
+            <div class="container-fluid pr-sectext">
+              <h2 class="pr-secname">
+                Winery Dry Creek Building
+              </h2>
+              <h2 class="pr-secdescr">
+                Art Modern
+              </h2>
+            </div>
+            <img src="imgs\arrow.png" class="img-fluid " alt="arrow">
+          </div>
+
+        </div>
+
+        <div class="container-fluid pr-card">
+          <img src="imgs\pr2.png" class="img-fluid pr-img" alt="pr2">
+
+          <div class="container-fluid pr-subtext">
+            <div class="container-fluid pr-sectext">
+              <h2 class="pr-secname">
+                Creative Workplace Design
+              </h2>
+              <h2 class="pr-secdescr">
+                Minimalist
+              </h2>
+            </div>
+            <img src="imgs\arrow.png" class="img-fluid " alt="arrow">
+          </div>
+
+        </div>
+
+        <div class="container-fluid pr-card">
+          <img src="imgs\pr3.png" class="img-fluid pr-img" alt="pr3">
+
+          <div class="container-fluid pr-subtext">
+            <div class="container-fluid pr-sectext">
+              <h2 class="pr-secname">
+                Bedroom Interior Pot Work
+              </h2>
+              <h2 class="pr-secdescr">
+                Modern
+              </h2>
+            </div>
+            <img src="imgs\arrow.png" class="img-fluid " alt="arrow">
+          </div>
+
+        </div>
+
+        <div class="container-fluid pr-card">
+          <img src="imgs\pr4.png" class="img-fluid pr-img" alt="pr4">
+
+          <div class="container-fluid pr-subtext">
+            <div class="container-fluid pr-sectext">
+              <h2 class="pr-secname">
+                Light Ambience Sepia Design
+              </h2>
+              <h2 class="pr-secdescr">
+                Scandinavian
+              </h2>
+            </div>
+            <img src="imgs\arrow.png" class="img-fluid " alt="arrow">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec" >
+
+
+    <div class="container-fluid num">
+      <div class="container-fluid num-cards">
+
+        <div class="container-fluid num-card">
+          <h1 class="num-name">12</h1>
+          <h2 class="num-descr">Years Of Experiance</h2>
+        </div>
+        <img src="imgs\line.png" class="img-fluid line" alt="line">
+
+        <div class="container-fluid num-card">
+          <h1 class="num-name">5K</h1>
+          <h2 class="num-descr">Success Project</h2>
+        </div>
+        <img src="imgs\line.png" class="img-fluid line" alt="line">
+
+        <div class="container-fluid num-card">
+          <h1 class="num-name">1K</h1>
+          <h2 class="num-descr">Active Project</h2>
+        </div>
+        <img src="imgs\line.png" class="img-fluid line" alt="line">
+
+        <div class="container-fluid num-card">
+          <h1 class="num-name">4K</h1>
+          <h2 class="num-descr">Happy Customers</h2>
+        </div>
+
+      </div>
+    </div>
+  
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec ">
+    <div class="container-fluid blog">
+      
+      <div class="container-fluid blog-text">
+        <h1 class="blog-name">
+          Recent Blogs
+        </h1>
+
+        <h2 class="blog-descr">
+          Get updates about our latest trends and techniques used in <br>
+          interior design project works.
+        </h2>
+      </div>
+
+      <div class="container-fluid blog-cards">
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog1.png" class="img-fluid blog-img" alt="blog1">
+
+          <h1 class="blog-card-name">Residential Interior Designer In New York, USA</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog2.png" class="img-fluid blog-img" alt="blog2">
+
+          <h1 class="blog-card-name">How To Choose The Best Wall Art & Decor House?</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog3.png" class="img-fluid blog-img" alt="blog3">
+
+          <h1 class="blog-card-name">Tips To Increase The Interior Value Of Your House</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog4.png" class="img-fluid blog-img" alt="blog4">
+
+          <h1 class="blog-card-name">Best Solution For Any Office & Business Interior</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog5.png" class="img-fluid blog-img" alt="blog5">
+
+          <h1 class="blog-card-name">Get Solution For Building Construction Work</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+        <div class="container-fluid blog-card">
+          <img src="imgs\blog6.png" class="img-fluid blog-img" alt="blog6">
+
+          <h1 class="blog-card-name">Attain The Best Finish For The Kitchen Cabinets</h1>
+
+          <div class="container-fluid blog-date-btn">
+            <h2 class="blog-card-date">November 23, 2021</h2>
+            <img src="imgs\arrow.png" class="img-fluid blog-arr" alt="arrow">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sec ">
+    <div class="container-fluid join">
+      <h1 class="join-name">Wanna join the interno?</h1>
+      <h2 class="join-descr">Contact Us & Get a Free Consultation</h2>
+      <button class="join-btn">Connect With us</button>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="container-fluid foot-cols">
+      <div class="container-fluid foot-logo">
+
+        <div class="container-fluid foot-column" style="width: 24.625rem;">
+          <img src="imgs\logo.svg" class="img-fluid" alt="logo" style="width: 11.063rem; height: 3.125rem;">
+  
+          <h2 class="foot-text">
+            We are the leading architect and<br>
+            interior design firm in the world.
+          </h2>
+  
+          <div class="container-fluid icons">
+            <img src="imgs\facebook.png" class="img-fluid icon" alt="facebook">
+            <img src="imgs\twitter.png" class="img-fluid icon" alt="twitter">
+            <img src="imgs\IN.png" class="img-fluid icon" alt="IN">
+            <img src="imgs\insta.png" class="img-fluid icon" alt="insta">
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="container-fluid foot-column" style="width: 13.188rem;">
+        <h1 class="foot-col-name">Pages</h1>
+  
+        <h2 class="foot-col-text">
+          Style Guide
+        </h2>
+        <h2 class="foot-col-text">
+          Protected
+        </h2>
+        <h2 class="foot-col-text">
+          Licenses
+        </h2>
+        <h2 class="foot-col-text">
+          Changelog
+        </h2>
+        <h2 class="foot-col-text">
+          404
+        </h2>
+      </div>
+  
+      <div class="container-fluid foot-column" style="width: 13.188rem;">
+        <h1 class="foot-col-name">Explore</h1>
+  
+        <h2 class="foot-col-text">
+          About Us
+        </h2>
+        <h2 class="foot-col-text">
+          Recent Blog
+        </h2>
+        <h2 class="foot-col-text">
+          Pricing Plan
+        </h2>
+        <h2 class="foot-col-text">
+          Our Projects
+        </h2>
+        <h2 class="foot-col-text">
+          Contact Us
+        </h2>
+      </div>
+  
+      <div class="container-fluid foot-column" style="width: 13.188rem;">
+        <h1 class="foot-col-name">Contact</h1>
+  
+        <h2 class="foot-col-text">
+          53, East Birchwood Ave. Brooklyn,<br>
+          New York 11201, USA.
+        </h2>
+        <h2 class="foot-col-text">
+          contact@interno.com
+        </h2>
+        <h2 class="foot-col-text">
+          (123) 456 - 7890
+        </h2>
+      </div>
+    </div>
+
+    <div class="container-fluid text-footer">
+      <h2 class="black-text">Copyright © Interno | Designed by</h2>
+      <h2 class="orange-text">Victorflow</h2>
+      <h2 class="black-text">Templates - Powered by</h2>
+      <h2 class="orange-text">Webflow</h2>
+    </div>
+  </footer>
+
+  <div>
+    <!-- Кнопка для запуска игры -->
+    <button type="button" id="gameButton" class="btn btn-primary">Мини-игра</button>
+
+    <!-- Модальное окно для игры -->
+    <div id="gameModal" class="custom-modal">
+        <h2>Игра "Угадай число"</h2>
+        
+        <!-- Поля для ввода -->
+        <div>
+            <input type="number" id="userInput" class="form-control" placeholder="Введите число от 0 до 10 и нажми Enter" min="0" max="10" />
+            <input type="text" id="randomNumber" class="form-control" readonly placeholder="Число компьютера" />
+        </div>
+
+        <!-- Сообщение о результате -->
+        <div id="gameResultMessage"></div>
+        
+        <!-- Кнопка закрытия -->
+        <button id="closeGameModal" class="btn btn-primary">Закрыть</button>
+    </div>
+  </div>
+
+  <div id="heartTrail"></div>
+
+
+  
+
+  <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+  <script src="js-script.js"></script>
+</body>
+</html>

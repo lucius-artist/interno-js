@@ -1,0 +1,100 @@
+/* Стили для модального окна мини-игры */
+#gameModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    text-align: center;
+    display: none; /* Скрыто по умолчанию */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовка модального окна */
+#gameModal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для полей ввода */
+#gameModal input {
+    padding: 10px;
+    margin: 5px 0 15px 0; /* Отступы сверху и снизу */
+    font-size: 16px;
+    width: 100%; /* Поле ввода на всю ширину окна */
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+/* Стили для кнопки "Закрыть" */
+#closeGameModal {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 76px; /* 2 см = 76px */
+    transition: background-color 0.3s;
+}
+
+/* Плавное изменение фона кнопки при наведении */
+#closeGameModal:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для сообщений о результате игры */
+#gameResultMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Зеленое сообщение при выигрыше */
+.green {
+    color: green;
+}
+
+/* Красное сообщение при неудаче */
+.red {
+    color: red;
+}
+
+/* Стили для правого поля с числом (не редактируемое) */
+#randomNumber {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Поле занимает всю ширину */
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+#gameButton {
+    display: block; /* Для блока, чтобы можно было использовать margin */
+    margin: 76px auto 76px; /* 2 см сверху и снизу, авто выравнивание по центру */
+    padding: 10px 20px; /* Немного отступов для удобства */
+    font-size: 16px; /* Размер текста */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Указатель мыши при наведении */
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+/* Для кнопки при наведении */
+#gameButton:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}

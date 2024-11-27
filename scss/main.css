@@ -1,0 +1,852 @@
+@charset "UTF-8";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+.navbar {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 30.313rem;
+}
+
+.menu {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  align-items: end;
+  gap: 2.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 7.5rem;
+  width: 37.5rem !important;
+  height: 24.125rem !important;
+  gap: 1.688rem;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: 0.014rem;
+  width: 37.5rem !important;
+}
+
+.descr {
+  font-size: 1.375rem;
+}
+
+.frame {
+  width: 120rem;
+  height: 51.938rem;
+  background-image: url(../imgs/IMAGE.jpeg);
+  background-size: cover;
+  margin: 0;
+}
+
+.btn-main {
+  width: 12.938rem;
+  height: 4.438rem;
+  border: 0.125rem solid rgb(41, 47, 54);
+  border-radius: 1.125rem;
+  background: rgb(41, 47, 54);
+  color: white;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 450px;
+  background-color: white;
+  border: 2px solid #000;
+  display: none; /* Модальное окно скрыто по умолчанию */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1051; /* Убедимся, что оно выше стандартного z-index */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стили для заголовка */
+.custom-modal h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Стили для текста */
+.custom-modal p {
+  font-size: 16px;
+}
+
+/* Таймер */
+.timer {
+  font-size: 48px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Стили для кнопки закрытия */
+#closeModal {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hover эффект для кнопки закрытия */
+#closeModal:hover {
+  background-color: #0056b3;
+}
+
+/* Контейнер для фейерверков */
+#fireworks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Отключаем события мыши */
+  overflow: hidden;
+}
+
+/* Частица фейерверка */
+.firework-particle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(var(--color), 1) 100%);
+  border-radius: 50%;
+  animation: particle-animation var(--duration) ease-out forwards;
+  box-shadow: 0 0 10px rgba(var(--color), 0.8);
+}
+
+/* Анимация движения частиц */
+@keyframes particle-animation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.8);
+  }
+}
+.cards {
+  width: 75rem;
+}
+
+.table-card {
+  display: flex;
+  width: 25rem;
+  height: 25rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.table-name {
+  color: rgb(41, 47, 54);
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 2.438rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+  width: 10.875rem !important;
+  margin: auto !important;
+}
+
+.table-descr {
+  color: rgb(77, 80, 83);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+  width: 19.813rem;
+  margin: auto !important;
+}
+
+.table-btn {
+  color: rgb(77, 80, 83);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  letter-spacing: 0.023rem;
+  text-align: center;
+  margin: auto !important;
+}
+
+.call-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  height: 37rem;
+  width: 75rem;
+}
+
+.call-name {
+  color: rgb(41, 47, 54);
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 65px;
+  letter-spacing: 0.22px;
+  text-align: left;
+}
+
+.call-descr {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  text-align: left;
+}
+
+.numb {
+  width: 300px;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.kitchen {
+  height: 37rem;
+  width: 37rem;
+}
+
+.img-kitchen {
+  width: 37rem;
+}
+
+.text-sec {
+  width: 37rem;
+}
+
+.review {
+  flex-direction: column;
+  width: 75rem;
+  height: 42.188rem;
+  gap: 2.875rem;
+  border-radius: 4.375rem;
+  background: rgb(244, 240, 236);
+  justify-content: center !important;
+}
+
+.rev-cards {
+  display: flex;
+}
+
+.name {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.014rem;
+  width: 30rem !important;
+  text-align: center;
+}
+
+.photo {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.name-rev {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 2.344rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+}
+
+.town-rev {
+  color: rgb(77, 80, 83);
+  font-family: Jost;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+}
+
+.text-rev {
+  color: rgb(77, 80, 83);
+  font-family: Jost;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+  width: 17.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-town {
+  display: flex;
+  width: 18.063rem;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rev-card {
+  border-radius: 1.875rem;
+  background: rgb(255, 255, 255);
+  width: 22.25rem;
+  height: 18.063rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.brands {
+  width: 75rem;
+}
+
+.proj {
+  flex-direction: column;
+  gap: 4.375rem;
+}
+
+.pr-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.pr-name {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 2.938rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.pr-descr {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.pr-secname {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.344rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+  width: 20.313rem;
+  margin-bottom: 0;
+}
+
+.pr-secdescr {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+}
+
+.pr-sectext {
+  height: 4.375rem;
+  width: 20.313rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.pr-subtext {
+  display: flex;
+  width: 36.875rem;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pr-cards {
+  width: 76.25rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pr-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  width: 36.875rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pr-img {
+  width: 36.875rem;
+  height: 41.313rem;
+}
+
+.num {
+  background-color: rgb(244, 240, 236);
+}
+
+.num-cards {
+  display: flex;
+  height: 29.688rem;
+  gap: 0.5rem;
+  width: 75rem;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+.num-card {
+  width: 18rem;
+  height: 12.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.num-name {
+  color: rgb(205, 162, 116);
+  font-family: "DM Serif Display", serif;
+  font-size: 5.313rem;
+  font-weight: 400;
+  line-height: 7.969rem;
+  letter-spacing: 0.106rem;
+  text-align: center;
+  width: 4.875rem !important;
+}
+
+.num-descr {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.line {
+  height: 12.188rem;
+}
+
+.blog {
+  flex-direction: column;
+  gap: 4.375rem;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.blog-name {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 2.938rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.blog-descr {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.blog-card-name {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 2.188rem;
+  letter-spacing: 0.031rem;
+  text-align: left;
+  width: 21.125rem !important;
+}
+
+.blog-card-date {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+}
+
+.blog-arr {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.blog-date-btn {
+  width: 21.541rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: space-between;
+}
+
+.blog-card {
+  box-sizing: border-box;
+  border: 0.063rem solid rgb(231, 231, 231);
+  border-radius: 3.875rem;
+  width: 24.188rem;
+  height: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.blog-img {
+  height: 18.5rem;
+  width: 21.563rem;
+}
+
+.blog-cards {
+  width: 76.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.join {
+  border-radius: 4.375rem;
+  background: rgb(41, 47, 54);
+  flex-direction: column;
+  width: 75rem;
+  height: 25.875rem;
+  gap: 1.25rem;
+  justify-content: center !important;
+}
+
+.join-name {
+  color: rgb(255, 255, 255);
+  font-family: "DM Serif Display", serif;
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 4.688rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.join-descr {
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+}
+
+.join-btn {
+  box-sizing: border-box;
+  border: 0.125rem solid rgb(205, 162, 116);
+  border-radius: 18px;
+  box-shadow: 0.063rem 0rem 1.125rem 0rem rgba(0, 0, 0, 0.2);
+  background: rgb(205, 162, 116);
+  color: rgb(255, 255, 255);
+  font-family: "Jost";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  letter-spacing: 0.014rem;
+  text-align: center;
+  width: 15.063rem;
+  height: 4.438rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 38rem;
+  justify-content: flex-end;
+}
+
+.foot-cols {
+  height: 28.375rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.foot-logo {
+  width: 24.625rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.foot-column {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  height: 28.375rem;
+}
+
+.foot-text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  gap: 2.5rem;
+  height: 3.313rem;
+}
+
+.icon {
+  width: auto;
+  height: 1.125rem;
+}
+
+.foot-col-name {
+  color: rgb(41, 47, 54);
+  font-family: "DM Serif Display", serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 2.344rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+  width: 13.188rem !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.foot-col-text {
+  color: rgb(77, 80, 83);
+  font-family: "Jost";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.063rem;
+  letter-spacing: 0.014rem;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 13.188rem;
+}
+
+.black-text {
+  color: rgb(77, 80, 83);
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  text-align: center;
+  width: auto;
+}
+
+.orange-text {
+  color: rgb(205, 162, 116);
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  text-align: center;
+  width: auto;
+}
+
+.text-footer {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Стили для модального окна мини-игры */
+#gameModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  background-color: white;
+  border: 2px solid #000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  text-align: center;
+  display: none; /* Скрыто по умолчанию */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовка модального окна */
+#gameModal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Стили для полей ввода */
+#gameModal input {
+  padding: 10px;
+  margin: 5px 0 15px 0; /* Отступы сверху и снизу */
+  font-size: 16px;
+  width: 100%; /* Поле ввода на всю ширину окна */
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+/* Стили для кнопки "Закрыть" */
+#closeGameModal {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff; /* Синий цвет */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 76px; /* 2 см = 76px */
+  transition: background-color 0.3s;
+}
+
+/* Плавное изменение фона кнопки при наведении */
+#closeGameModal:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для сообщений о результате игры */
+#gameResultMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Зеленое сообщение при выигрыше */
+.green {
+  color: green;
+}
+
+/* Красное сообщение при неудаче */
+.red {
+  color: red;
+}
+
+/* Стили для правого поля с числом (не редактируемое) */
+#randomNumber {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /* Поле занимает всю ширину */
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+#gameButton {
+  display: block; /* Для блока, чтобы можно было использовать margin */
+  margin: 76px auto 76px; /* 2 см сверху и снизу, авто выравнивание по центру */
+  padding: 10px 20px; /* Немного отступов для удобства */
+  font-size: 16px; /* Размер текста */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Указатель мыши при наведении */
+  transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+/* Для кнопки при наведении */
+#gameButton:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+/* Контейнер для сердечек */
+#heartTrail {
+  position: relative;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* Сердечки */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../imgs/heart.png") no-repeat center center;
+  background-size: contain;
+  animation: fadeOut 1.5s linear forwards, floatUp 1.5s ease-in-out forwards;
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Анимация подъема */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}/*# sourceMappingURL=main.css.map */

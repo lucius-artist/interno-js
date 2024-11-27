@@ -1,0 +1,43 @@
+.cards {
+    width: 75rem;
+}
+
+.table-card {
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.table-name {
+    color: rgb(41, 47, 54);
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 2.438rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+    width: 10.875rem !important;
+    margin: auto !important;
+}
+
+.table-descr {
+    color: rgb(77, 80, 83);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.063rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+    width: 19.813rem;
+    margin: auto !important;
+}
+
+.table-btn {
+    color: rgb(77, 80, 83);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+    letter-spacing: 0.023rem;
+    text-align: center;
+    margin: auto !important;
+}

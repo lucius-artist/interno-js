@@ -1,0 +1,36 @@
+/* Контейнер для сердечек */
+#heartTrail {
+    position: relative;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+/* Сердечки */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('../imgs/heart.png') no-repeat center center;
+    background-size: contain;
+    animation: fadeOut 1.5s linear forwards, floatUp 1.5s ease-in-out forwards;
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Анимация подъема */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}

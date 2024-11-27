@@ -1,0 +1,46 @@
+.join {
+    border-radius: 4.375rem;
+    background: rgb(41, 47, 54);
+    flex-direction: column;
+    width: 75rem;
+    height: 25.875rem;
+    gap: 1.25rem;
+    justify-content: center !important;
+}
+
+.join-name {
+    color: rgb(255, 255, 255);
+    font-family: "DM Serif Display", serif;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 4.688rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+}
+
+.join-descr {
+    color: rgb(255, 255, 255);
+    font-family: "Jost";
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.063rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+}
+
+.join-btn {
+    box-sizing: border-box;
+    border: 0.125rem solid rgb(205, 162, 116);
+    border-radius: 18px;
+    box-shadow: 0.063rem 0rem 1.125rem 0rem rgba(0, 0, 0, 0.2);
+    background: rgb(205, 162, 116);
+    color: rgb(255, 255, 255);
+    font-family: "Jost";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+    width: 15.063rem;
+    height: 4.438rem;
+}

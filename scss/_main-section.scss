@@ -1,0 +1,130 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 7.5rem;
+    width: 37.5rem !important;
+    height: 24.125rem !important;
+    gap: 1.688rem;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 6rem;
+    letter-spacing: 0.014rem;
+    width: 37.5rem !important;
+}
+
+.descr {
+    font-size: 1.375rem;
+}
+
+.frame {
+    width: 120rem;
+    height: 51.938rem;
+    background-image: url(../imgs/IMAGE.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+
+.btn-main {
+    width: 12.938rem;
+    height: 4.438rem;
+    border: 0.125rem solid rgb(41, 47, 54);
+    border-radius: 1.125rem;
+    background: rgb(41, 47, 54);
+    color: white;
+}
+
+.custom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border: 2px solid #000;
+    display: none; /* Модальное окно скрыто по умолчанию */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1051; /* Убедимся, что оно выше стандартного z-index */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для заголовка */
+.custom-modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Стили для текста */
+.custom-modal p {
+    font-size: 16px;
+}
+
+/* Таймер */
+.timer {
+    font-size: 48px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Стили для кнопки закрытия */
+#closeModal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover эффект для кнопки закрытия */
+#closeModal:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Контейнер для фейерверков */
+#fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Отключаем события мыши */
+    overflow: hidden;
+}
+
+/* Частица фейерверка */
+.firework-particle {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(var(--color),1) 100%);
+    border-radius: 50%;
+    animation: particle-animation var(--duration) ease-out forwards;
+    box-shadow: 0 0 10px rgba(var(--color), 0.8);
+}
+
+/* Анимация движения частиц */
+@keyframes particle-animation {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--dx), var(--dy)) scale(0.8);
+    }
+}

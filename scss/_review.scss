@@ -1,0 +1,81 @@
+.review {
+    flex-direction: column;
+    width: 75rem;
+    height: 42.188rem;
+    gap: 2.875rem;
+    border-radius: 4.375rem;
+    background: rgb(244, 240, 236);
+    justify-content: center !important;
+}
+
+.rev-cards {
+    display: flex;
+    
+}
+
+.name {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    letter-spacing: 0.014rem;
+    width: 30rem !important;
+    text-align: center;
+}
+
+.photo {
+    height: 4.8rem;
+    width: 4.8rem;
+}
+
+.name-rev {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", serif;
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 2.344rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+}
+
+.town-rev {
+    color: rgb(77, 80, 83);
+    font-family: Jost;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+}
+
+.text-rev {
+    color: rgb(77, 80, 83);
+    font-family: Jost;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+    width: 17.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-town {
+    display: flex;
+    width: 18.063rem;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rev-card {
+    border-radius: 1.875rem;
+    background: rgb(255, 255, 255);
+    width: 22.25rem;
+    height: 18.063rem;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

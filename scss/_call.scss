@@ -1,0 +1,49 @@
+.call-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+    height: 37rem;
+    width: 75rem;
+}
+
+.call-name {
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: 0.22px;
+    text-align: left;
+}
+
+.call-descr {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    text-align: left;
+}
+
+.numb {
+    width: 300px;
+    height: 93px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.kitchen {
+    height: 37rem;
+    width: 37rem;
+}
+
+.img-kitchen {
+    width: 37rem;
+}
+
+.text-sec {
+    width: 37rem;
+}

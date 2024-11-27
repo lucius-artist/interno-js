@@ -1,0 +1,105 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 38rem;
+    justify-content: flex-end
+}
+
+.foot-cols {
+    height: 28.375rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.foot-logo {
+    width: 24.625rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.foot-column {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    height: 28.375rem;
+}
+
+.foot-text {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.063rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 2.5rem;
+    height: 3.313rem;
+}
+
+.icon {
+    width: auto;
+    height: 1.125rem;
+}
+
+.foot-col-name {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", serif;
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 2.344rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+    width: 13.188rem !important;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.foot-col-text {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.063rem;
+    letter-spacing: 0.014rem;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 13.188rem;
+}
+
+.black-text {
+    color: rgb(77, 80, 83);
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    text-align: center;
+    width: auto;
+}
+
+.orange-text {
+    color: rgb(205, 162, 116);
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    text-align: center;
+    width: auto;
+}
+
+.text-footer {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: center;
+    align-items: flex-end;
+}

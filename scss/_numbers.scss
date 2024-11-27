@@ -1,0 +1,47 @@
+.num {
+   background-color: rgb(244, 240, 236);  
+}
+
+.num-cards {
+    display: flex;
+    height: 29.688rem;
+    gap: 0.5rem;
+    width: 75rem;
+    flex-wrap: nowrap !important;
+    align-items: center;
+}
+
+.num-card {
+    width: 18rem;
+    height: 12.188rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.num-name {
+    color: rgb(205, 162, 116);
+    font-family: "DM Serif Display", serif;
+    font-size: 5.313rem;
+    font-weight: 400;
+    line-height: 7.969rem;
+    letter-spacing: 0.106rem;
+    text-align: center;
+    width: 4.875rem !important;
+}
+
+.num-descr {
+    color: rgb(77, 80, 83);
+    font-family: "Jost";
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.063rem;
+    letter-spacing: 0.014rem;
+    text-align: center;
+}
+
+.line {
+    height: 12.188rem;
+}
